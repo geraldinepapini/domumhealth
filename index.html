@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Domum Health - Salud y bienestar</title>
+  <link rel="stylesheet" href="ESTILOS/inicio.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+    const nextBtn = document.querySelector('.next');
+    const prevBtn = document.querySelector('.prev');
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+      });
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % totalSlides;
+      showSlide(currentSlide);
+    }
+
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+      showSlide(currentSlide);
+    }
+
+    nextBtn.addEventListener('click', nextSlide);
+    prevBtn.addEventListener('click', prevSlide);
+
+    // autoplay cada 5 segundos
+    setInterval(nextSlide, 5000);
+  });
+</script>
+
+
+<body>
+
+  <!-- Redes sociales arriba -->
+ <div class="redes-sociales">
+  <a href="https://www.instagram.com/domumhealth/" target="_blank">
+    <img src="img/instagram1.svg" alt="Instagram">
+  </a>
+  <a href="https://www.youtube.com/@domumhealth" target="_blank">
+    <img src="img/youtube-2433301.svg" alt="YouTube">
+  </a>
+  <a href="https://www.tiktok.com/@domumhealth/" target="_blank">
+    <img src="img/tiktok.svg" alt="TikTok">
+  </a>
+</div>
+  <!-- Header + Logo -->
+  <header>
+    <img src="img/domumhealth4.png" alt="Domum Health" class="logo">
+  </header>
+
+  <!-- Menú -->
+  <nav>
+    <ul>
+      <li><a href="index.html">INICIO</a></li>
+      <li><a href="Tienda.html">TIENDA DIGITAL</a></li>
+      <li><a href="cursos.html">CURSOS</a></li>
+      <li><a href="nosotros.html">NOSOTROS</a></li>
+      <li><a href="blog.html">BLOG</a></li>
+    </ul>
+  </nav>
+
+  <!-- Imagen de portada -->
+  <section class="hero">
+    <img src="img/jappi-optimized5.jpg" class="hero-img" alt="Imagen principal">
+  </section>
+
+  <!-- Servicios -->
+  <section class="servicios">
+    <h2>NUESTROS SERVICIOS</h2>
+
+    <div class="servicio">
+      <img src="img/cursoinicio.jpg" alt="Cursos">
+      <div class="info">
+        <h3>CURSOS</h3>
+        <p>Capacitación profesional para aprender de nutrición, bienestar y salud</p>
+        <a href="#" class="btn-vermas">Ver más <i class="fas fa-arrow-circle-right"></i></a>
+      </div>
+    </div>
+
+    <div class="servicio">
+      <img src="img/tiendainicio.jpg" alt="Tienda digital">
+      <div class="info">
+        <h3>Tienda digital</h3>
+        <p>Capacitaciones express y específicas para ampliar un tema o para iniciarse en la salud óptima</p>
+        <a href="#" class="btn-vermas">Ver más <i class="fas fa-arrow-circle-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- Banner testimonios -->
+ 
+
+  <section class="testimonios-banner">
+  <h2>Lo que dicen de nuestros cursos</h2>
+  <div class="slider">
+    <button class="prev">&#10094;</button>
+    <div class="slides-wrapper">
+      <div class="slide active">
+        <p>✨ “Muy clara la explicación. ¡Muy recomendado!” – Ceci G.</p>
+      </div>
+      <div class="slide">
+        <p>🌱 “Información útil, actividades prácticas útiles, explicaciones claras, presentación atrayente” – Ester P.</p>
+      </div>
+      <div class="slide">
+        <p>💪 “Great!!” – Daniel R.</p>
+      </div>
+      <div class="slide">
+        <p>💪 “Información muy útil y bien explicado por un experto” – Jacky Z.</p>
+      </div>
+      <div class="slide">
+        <p>💪 “Este curso es una introducción accesible y clara sobre las vitaminas, proporcionando información detallada que es útil para quienes se inician en estudios de dietética. La explicación y la profundidad del contenido ayudan a los estudiantes a formar una base sólida” – Ale F.</p>
+      </div>
+      <div class="slide">
+        <p>💪 “Excelente curso” – Manuela P.</p>
+      </div>
+      <div class="slide">
+        <p>💪 “Descripción del curso acorde a lo visto, muy profesional y ejercicios prácticos para aplicar” – Laura A.</p>
+      </div>
+      <div class="slide">
+        <p>💪 “Curso no muy largo y bien explicado. En él he aprendido las bases de cada una de las vitaminas principales más en profundidad. Yo quiero estudiar dietética el año que viene y esta información me ha venido muy bien.” – Regina A.</p>
+      </div>
+    </div>
+    <button class="next">&#10095;</button>
+  </div>
+</section>
+
+
+
+ <!-- Misión y Visión -->
+<section class="mision-vision">
+  <div class="card">
+    <h1>Misión</h1>
+    <img src="img/iconomision.svg" alt="Misión">
+    <p>
+      En Domum Health acompañamos a las personas a construir hábitos saludables reales y sostenibles,
+      combinando conocimientos de bioquímica, nutrición y bienestar.
+      Nuestro objetivo es que comprendan cómo funciona su cuerpo, valoren el rol del bioquímico en la salud
+      y aprendan que cuidar de sí mismos no es un sacrificio, sino un camino accesible y cotidiano.
+    </p>
+  </div>
+  <div class="card">
+    <h1>Visión</h1>
+    <img src="img/iconovision.jpg" alt="Visión">
+    <p>
+      Ser una comunidad referente en educación para la salud y el bienestar integral en Latinoamérica,
+      donde miles de personas incorporen la bioquímica y la nutrición como parte de su vida diaria,
+      sin frustraciones, disfrutando el proceso y entendiendo que la salud es un equilibrio entre conocimiento,
+      prevención y pequeñas acciones constantes.
+    </p>
+  </div>
+</section>
+
+
+  <!-- Nuestro equipo -->
+  <section class="nuestro-equipo">
+    <h2>Nuestro equipo</h2>
+    <div class="equipo">
+      <div class="miembro">
+        <img src="img/FOTO SOBRE MI.jpg" alt="Geraldine Papini">
+        <h3>FUNDADORA Y BIOQUIMICA</h3>
+        <p>
+          Soy Geraldine Papini, bioquímica y apasionada de la salud integral.
+          Desde mi experiencia en laboratorio y nutrición, ayudo a personas a incorporar hábitos saludables
+          de manera simple y sostenible, sin frustraciones. Creo que la bioquímica no es solo ciencia de laboratorio:
+          es parte de nuestra vida cotidiana, clave para entender y cuidar nuestro cuerpo.
+          En Domum Health comparto conocimientos, herramientas y productos que te inspiran
+          a cuidar tu salud física, emocional y mental cada día.
+        </p>
+      </div>
+      <div class="miembro">
+        <img src="img/EQUIPOinicio.jpg" alt="Equipo Interdisciplinario">
+        <h3>COLABORADORES: EQUIPO INTERDISCIPLINARIO</h3>
+        <p>
+          En Domum Health no estoy sola: cuento con el apoyo de un equipo de profesionales apasionados por el bienestar.
+          Médicos, nutricionistas, entrenadores y bioquímicos colaboran en la creación de cada contenido y recurso que compartimos.
+          Juntos unimos experiencia científica y práctica diaria para brindarte información confiable,
+          guías sencillas y herramientas reales que te ayuden a cuidar tu salud física, emocional y mental.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Domum Health. Todos los derechos reservados.</p>
+    <p>Seguinos en nuestras redes sociales</p>
+    <div class="redes-sociales">
+  <a href="https://www.instagram.com/domumhealth/" target="_blank">
+    <img src="img/instagram1.svg" alt="Instagram">
+  </a>
+  <a href="https://www.youtube.com/@domumhealth" target="_blank">
+    <img src="img/youtube-2433301.svg" alt="YouTube">
+  </a>
+  <a href="https://www.tiktok.com/@domumhealth/" target="_blank">
+    <img src="img/tiktok.svg" alt="TikTok">
+  </a>
+</div>
+  </footer>
+
+</body>
+</html>

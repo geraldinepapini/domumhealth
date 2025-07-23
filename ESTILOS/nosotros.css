@@ -1,0 +1,213 @@
+/* ======= ESTILO GENERAL ======= */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+  color: #0077b6; /* azul del logo */
+  font-weight: 700;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+/* ======= REDES SOCIALES ======= */
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px 0;
+  background: #f8f8f8;
+}
+.redes-sociales img {
+  width: 30px;
+  transition: transform 0.3s ease;
+}
+.redes-sociales img:hover {
+  transform: scale(1.2);
+}
+
+/* ======= HEADER ======= */
+header {
+  text-align: center;
+  padding: 10px 0;
+  background: #fff;
+}
+.logo {
+  max-width: 200px;
+}
+
+/* ======= MENÚ ======= */
+nav {
+  background: #0077b6;
+  padding: 10px 0;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  margin: 0 15px;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+nav a:hover {
+  color: #90e0ef; /* celeste */
+}
+
+/* ======= HERO ======= */
+.hero {
+  width: 100%;
+  max-height: 300px;
+  overflow: hidden;
+}
+.hero-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* ======= CONTENEDOR GENERAL ======= */
+.container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+}
+
+.container h2 {
+  margin-top: 40px;
+  font-size: 1.8em;
+}
+
+.container ul {
+  list-style: disc;
+  margin-left: 30px;
+}
+
+/* ======= SECCIONES MISIÓN Y VISIÓN ======= */
+.visionmision {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #f1faff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  gap: 40px;
+}
+.visionmision img {
+  max-width: 200px;
+  flex-shrink: 0;
+}
+.visionmision h2 {
+  color: #023e8a;
+}
+.visionmision p {
+  font-size: 16px;
+}
+
+/* Para alternar orden en pantallas pequeñas */
+@media (max-width: 768px) {
+  .visionmision {
+    flex-direction: column;
+    text-align: center;
+  }
+  .visionmision img {
+    margin-bottom: 20px;
+  }
+}
+
+/* ======= SECCIÓN EQUIPO ======= */
+.team-member {
+  margin-bottom: 50px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+.team-member img {
+  max-width: 200px;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto 20px auto;
+}
+.team-member h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.team-member p {
+  text-align: justify;
+}
+
+/* ======= FOOTER ======= */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #023e8a;
+  color: #fff;
+  margin-top: 50px;
+}
+footer p {
+  margin: 5px 0;
+}
+footer .redes-sociales {
+  background: none;
+  margin-top: 10px;
+}
+footer .redes-sociales img {
+  filter: brightness(0) invert(1);
+}
+.experiencia {
+  margin-top: 60px;
+}
+
+.experiencia h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.2em;
+  color: #0077b6;
+}
+
+.exp-bloque {
+  background: #f9f9f9;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.exp-bloque h2 {
+  color: #023e8a;
+  margin-bottom: 15px;
+}
+
+.exp-bloque ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.exp-bloque ul li {
+  margin-bottom: 8px;
+}
