@@ -1,1 +1,135 @@
-<h1>PROXIMAMENTE</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Domum Health - Salud y bienestar</title>
+  <link rel="stylesheet" href="ESTILOS/tienda.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+    const nextBtn = document.querySelector('.next');
+    const prevBtn = document.querySelector('.prev');
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+      });
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % totalSlides;
+      showSlide(currentSlide);
+    }
+
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+      showSlide(currentSlide);
+    }
+
+    nextBtn.addEventListener('click', nextSlide);
+    prevBtn.addEventListener('click', prevSlide);
+
+    // autoplay cada 5 segundos
+    setInterval(nextSlide, 5000);
+  });
+</script>
+
+
+<body>
+
+  <!-- Redes sociales arriba -->
+ <div class="redes-sociales">
+  <a href="https://www.instagram.com/domumhealth/" target="_blank">
+    <img src="img/instagram1.svg" alt="Instagram">
+  </a>
+  <a href="https://www.youtube.com/@domumhealth" target="_blank">
+    <img src="img/youtube-2433301.svg" alt="YouTube">
+  </a>
+  <a href="https://www.tiktok.com/@domumhealth/" target="_blank">
+    <img src="img/tiktok.svg" alt="TikTok">
+  </a>
+</div>
+  <!-- Header + Logo -->
+  <header>
+    <img src="img/domumhealth4.png" alt="Domum Health" class="logo">
+  </header>
+
+  <!-- Menú -->
+  <nav>
+    <ul>
+      <li><a href="index.html">INICIO</a></li>
+      <li><a href="tienda.html">TIENDA DIGITAL</a></li>
+      <li><a href="cursos.html">CURSOS</a></li>
+      <li><a href="nosotros.html">NOSOTROS</a></li>
+      <li><a href="blog.html">BLOG</a></li>
+    </ul>
+  </nav>
+
+  <!-- Imagen de portada -->
+  <section class="hero">
+    <img src="img/jappi-optimized5.jpg" class="hero-img" alt="Imagen principal">
+  </section>
+
+  <main>
+    <section class="hero-tienda">
+      <h1>Tienda Digital</h1>
+      <p>Descargá guias saludables y mucho más de Domum Health.</p>
+    </section>
+
+
+    <section class="productos-grid">
+      <!-- Producto 1 -->
+      <article class="producto">
+        <img src="ebook vendibles/Como-asar-verduras-sin-aceite-6.jpg" alt="Menú 7 días con recetas fáciles para toda la familia">
+        <h2>Menú 7 días con recetas fáciles para toda la familia</h2>
+        <p>Tres opciones de Menú diario (desayuno, almuerzo, merienda y cena). Tips de reemplazos y conservas. Recetas con ingredientes accesibles. Ahorro de tiempo y dinero. Mejora tu alimentación desde hoy. Fácil de seguir, sin dietas extremas</p>
+        <p class="precio">5 USD</p>
+        <a href="https://go.hotmart.com/B101744062O" class="boton-comprar" target="_blank">COMPRAR AHORA</a>
+      </article>
+
+      <!-- Producto 2 -->
+      <article class="producto">
+        <img src="ebook vendibles/Productos-Doré-Licuado-de-frutilla-con-lecha-01.jpg" alt="plan detox de 7 a 14 días">
+        <h2>Plan para detoxificación de nuestro cuerpo de 7 a 14 días</h2>
+        <p>Todo lo que tenes que saber de la verdad del detox, para quien es y como usarlos</p>
+        <p class="precio">Próximamente</p>
+        <a class="boton-proximamente">DISPONIBLE PRONTO</a>
+      </article>
+
+      <!-- Producto 3 -->
+      <article class="producto">
+        <img src="ebook vendibles/galleta de avena.jpeg" alt="plan de 30 días de colaciones saludables">
+        <h2>30 días de snacks saludables y sin culpa</h2>
+        <p>Quien no quisiera comer a todas horas sin salirse de la dieta.</p>
+        <p class="precio">Próximamente</p>
+        <a class="boton-proximamente">DISPONIBLE PRONTO</a>
+      </article>
+
+    </section>
+  </main>
+
+   <!-- Footer -->
+  <footer>
+    <p>© 2025 Domum Health. Todos los derechos reservados.</p>
+    <p>Seguinos en nuestras redes sociales</p>
+    <div class="redes-sociales">
+  <a href="https://www.instagram.com/domumhealth/" target="_blank">
+    <img src="img/instagram1.svg" alt="Instagram">
+  </a>
+  <a href="https://www.youtube.com/@domumhealth" target="_blank">
+    <img src="img/youtube-2433301.svg" alt="YouTube">
+  </a>
+  <a href="https://www.tiktok.com/@domumhealth/" target="_blank">
+    <img src="img/tiktok.svg" alt="TikTok">
+  </a>
+</div>
+  </footer>
+
+</body>
+</html>
