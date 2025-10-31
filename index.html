@@ -1,54 +1,68 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Domum Health - Salud y bienestar</title>
-  <link rel="stylesheet" href="ESTILOS/inicio.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="icon" href="img/flavicon.jpg" type="image/png">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QYJMLJQ343"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- 🔹 CONFIGURACIÓN BÁSICA -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  gtag('config', 'G-QYJMLJQ343');
-</script>
+  <title>Domum Health | Nutrición, bienestar y salud bioquímica</title>
+  <meta name="description" content="Domum Health te acompaña a construir hábitos saludables sostenibles. Cursos, ebooks y asesorías para transformar tu estilo de vida desde la bioquímica y la nutrición.">
+  <meta name="keywords" content="nutrición, bienestar, hábitos saludables, bioquímica, curso online, estilo de vida saludable, detox, alimentación sana, Domum Health, dieta, alimentos saludables, nutrición, Nutrientes, comida sana, autoestima, alimentación consciente, menu saludable, ejercicio, salud, comer sano, udemy, hotmart">
+  <meta name="author" content="Domum Health - Geraldine Papini">
+  <meta name="theme-color" content="#00cee3">
+
+  <!-- 🔹 FAVICON -->
+  <link rel="icon" href="img/flavicon.jpg" type="image/png">
+
+  <!-- 🔹 ESTILOS -->
+  <link rel="stylesheet" href="ESTILOS/inicio.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- 🔹 OPEN GRAPH (para compartir en redes sociales) -->
+  <meta property="og:title" content="Domum Health | Salud y Bienestar">
+  <meta property="og:description" content="Aprendé a cuidar tu cuerpo desde la bioquímica y la nutrición con Domum Health.">
+  <meta property="og:image" content="https://www.domumhealth.com.ar/img/domumhealth4.png">
+  <meta property="og:url" content="https://www.domumhealth.com.ar">
+  <meta property="og:type" content="website">
+
+  <!-- 🔹 TWITTER CARDS -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Domum Health | Salud y Bienestar">
+  <meta name="twitter:description" content="Transformá tu salud con hábitos sostenibles, ciencia y nutrición.">
+  <meta name="twitter:image" content="https://www.domumhealth.com.ar/img/domumhealth4.png">
+
+  <!-- 🔹 GOOGLE SITE VERIFICATION -->
+  <meta name=google-site-verification=CaAKVrWm6FKxDJBPZ91Gz7mc7PWtfrlWNWyf0SmUU5s content="CaAKVrWm6FKxDJBPZ91Gz7mc7PWtfrlWNWyf0SmUU5s">
+
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1102257695092530');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1102257695092530&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+  
+  <!-- 🔹 GOOGLE ANALYTICS (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QYJMLJQ343"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-QYJMLJQ343');
+  </script>
 </head>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    let currentSlide = 0;
-    const slides = document.querySelectorAll('.slide');
-    const totalSlides = slides.length;
-    const nextBtn = document.querySelector('.next');
-    const prevBtn = document.querySelector('.prev');
-
-    function showSlide(index) {
-      slides.forEach((slide, i) => {
-        slide.classList.toggle('active', i === index);
-      });
-    }
-
-    function nextSlide() {
-      currentSlide = (currentSlide + 1) % totalSlides;
-      showSlide(currentSlide);
-    }
-
-    function prevSlide() {
-      currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-      showSlide(currentSlide);
-    }
-
-    nextBtn.addEventListener('click', nextSlide);
-    prevBtn.addEventListener('click', prevSlide);
-
-    // autoplay cada 5 segundos
-    setInterval(nextSlide, 5000);
-  });
-</script>
 
 
 <body>
