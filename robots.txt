@@ -1,18 +1,5 @@
-# =============================
-# Domum Health - Robots.txt
-# =============================
-
 User-agent: *
 Allow: /
 
-# No indexar archivos del sistema o carpetas privadas
-Disallow: /ESTILOS/
-Disallow: /scripts/
-Disallow: /img/temp/
-Disallow: /private/
-
-# Sitemap para buscadores
 Sitemap: https://www.domumhealth.com.ar/sitemap.xml
 
-# Información del sitio
-Host: www.domumhealth.com.ar
