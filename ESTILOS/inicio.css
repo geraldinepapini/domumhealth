@@ -1,17 +1,43 @@
 /* Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500&display=swap');
+
+/* ===== Tipografías globales ===== */
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300; /* Raleway Light */
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+}
+p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  line-height: 1.7;
+}
+button, a.btn, .btn-vermas, .boton-comprar {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+}
 
 
 /* ======= RESET ======= */
-* {
+general {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: #6b5e52; /* texto suave */
   background: #f4f1ee; /* beige */
   line-height: 1.6;
@@ -158,25 +184,92 @@ nav ul li a:hover {
 }
 
 
-/* ======= BANNER TESTIMONIOS ======= */
+/* ======= BANNER TESTIMONIOS (compacto, elegante) ======= */
 .testimonios-banner {
   background: #E6cfc9; /* rosa cálido */
-  padding: 40px 20px;
+  padding: 60px 20px;
   text-align: center;
   position: relative;
+  font-family: 'Raleway', sans-serif;
 }
 
 .testimonios-banner h2 {
+  font-family: 'Playfair Display', serif;
   font-size: 1.8rem;
-  color: #9c8870; /* marrón suave */
-  margin-bottom: 30px;
+  font-weight: 600;
+  color: #9c8870;
+  margin-bottom: 25px;
 }
 
-.slide {
-  padding: 20px;
-  font-size: 1.1rem;
-  color: #6b5e52;
+/* Slider centrado y más compacto */
+.slider {
+  max-width: 750px;         /* 💎 Limita el ancho */
+  margin: 0 auto;
+  position: relative;
+  padding: 10px 40px;       /* 💎 Deja espacio para botones */
 }
+
+/* Texto del testimonio */
+.slide {
+  display: none;
+  padding: 15px 10px;
+  font-size: 1rem;          /* 💎 Más compacto */
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  color: #6b5e52;
+  line-height: 1.55;
+}
+
+.slide.active {
+  display: block;
+  animation: fade 0.5s ease-in-out;
+}
+
+/* Botones del slider */
+.slider button {
+  background: #f4f1ee;            /* beige */
+  border: 1px solid #d2c7be;      /* borde suave */
+  color: #9c8870;                 /* marrón elegante */
+  font-size: 1.4rem;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.2s ease;
+}
+
+.slider button:hover {
+  background: #e9e0da;
+  color: #7e6c5e;
+}
+
+/* Posiciones */
+.slider .prev {
+  left: 0;
+}
+.slider .next {
+  right: 0;
+}
+
+/* Animación */
+@keyframes fade {
+  from { opacity: 0; transform: translateY(5px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .slider {
+    padding: 10px 30px;
+  }
+  .slider button {
+    font-size: 1.2rem;
+    padding: 5px 8px;
+  }
+}
+
 
 
 /* ======= MISION Y VISION ======= */

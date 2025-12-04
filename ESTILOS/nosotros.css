@@ -1,7 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500&display=swap');
+/* ===== Tipografías globales ===== */
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300; /* Raleway Light */
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+}
+p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  line-height: 1.7;
+}
+button, a.btn, .btn-vermas, .boton-comprar {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+}
 /* ======= ESTILO GENERAL ======= */
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Raleway', sans-serif;
   line-height: 1.6;
   color: #6b5e52; /* marrón suave */
   background-color: #fafaf8; /* blanco cálido */
