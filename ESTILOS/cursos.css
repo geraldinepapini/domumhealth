@@ -9,12 +9,12 @@
   font-family: 'Poppins', sans-serif;
 }
 
-/* Colores base */
+/* Colores base — ACTUALIZADOS */
 :root {
-  --primary: #0077b6;
-  --secondary: #00b4d8;
-  --light-bg: #f8f9fa;
-  --text-dark: #333;
+  --primary: #9c8870;      /* marrón suave */
+  --secondary: #a7b7a8;    /* verde calma */
+  --light-bg: #f4f1ee;     /* beige */
+  --text-dark: #6b5e52;    /* marrón grisáceo suave */
 }
 
 /* Redes sociales */
@@ -23,7 +23,7 @@
   justify-content: center;
   gap: 15px;
   padding: 8px 0;
-  background: var(--light-bg);
+  background: #fafaf8; /* blanco cálido */
 }
 
 .redes-sociales img {
@@ -39,6 +39,7 @@
 header {
   text-align: center;
   padding: 10px 0;
+  background: #fafaf8;
 }
 .logo {
   max-width: 180px;
@@ -82,16 +83,16 @@ nav ul li a:hover {
 
 /* ===== Frase superior estilizada ===== */
 .frase-container {
-  background-color: #f9f9f9; /* Fondo suave para destacarla */
+  background-color: #fafaf8;
   padding: 50px 20px;
   text-align: center;
-  border-bottom: 2px solid #e6e6e6;
+  border-bottom: 2px solid #E6cfc9; /* rosa cálido */
 }
 
 .frase-container p {
   max-width: 850px;
   margin: 10px auto;
-  color: #444;
+  color: #6b5e52;
   font-size: 1.15rem;
   font-weight: 400;
   line-height: 1.7;
@@ -101,19 +102,18 @@ nav ul li a:hover {
 .frase-container p:first-child {
   font-size: 1.4rem;
   font-weight: 600;
-  color: #0077b6; /* color principal */
+  color: var(--primary); /* marrón suave */
   margin-bottom: 15px;
 }
 
 .frase-container p:last-child {
-  color: #555;
+  color: #7a6d62;
   font-style: italic;
 }
 
-
 /* ===== Sección principal de Cursos ===== */
 .cursos {
-  background-color: #fff;
+  background-color: #f4f1ee;
   padding: 60px 0;
   text-align: center;
   width: 100%;
@@ -123,7 +123,7 @@ nav ul li a:hover {
 .cursos h2 {
   font-size: 2.3rem;
   font-weight: 700;
-  color: #333;
+  color: var(--primary);
   margin-bottom: 1rem;
 }
 
@@ -143,30 +143,30 @@ nav ul li a:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   gap: 2.5rem;
-  width: 95%; /* se amplía a casi todo el ancho */
+  width: 95%;
   margin: 0 auto;
 }
 
 /* ===== Tarjetas ===== */
 .curso {
-  border: 1px solid #e0e0e0;
+  border: 1px solid #e0d6cf;
   border-radius: 12px;
   background-color: #fafafa;
   padding: 1.5rem;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .curso:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.10);
 }
 
 /* ===== Imagen ===== */
 .curso img {
   width: 100%;
-  height: 300px; /* más grande, como en la tienda */
+  height: 300px;
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 1rem;
@@ -176,7 +176,7 @@ nav ul li a:hover {
 .curso h3 {
   font-size: 1.1rem;
   font-weight: 700;
-  color: #222;
+  color: #6b5e52;
   margin-bottom: 0.8rem;
   line-height: 1.4;
 }
@@ -184,7 +184,7 @@ nav ul li a:hover {
 /* ===== Descripción ===== */
 .curso p {
   font-size: 0.95rem;
-  color: #555;
+  color: #85786c;
   margin-bottom: 1.2rem;
   line-height: 1.5;
 }
@@ -192,7 +192,7 @@ nav ul li a:hover {
 /* ===== Botón ===== */
 .btn-curso {
   display: inline-block;
-  background-color: #003199;
+  background-color: var(--secondary); /* verde calma */
   color: #fff;
   text-decoration: none;
   padding: 0.8rem 1.6rem;
@@ -202,7 +202,7 @@ nav ul li a:hover {
 }
 
 .btn-curso:hover {
-  background-color: #56397b;
+  background-color: #8ea395; /* verde calma más oscuro */
   transform: scale(1.05);
 }
 
@@ -222,10 +222,9 @@ nav ul li a:hover {
   }
 }
 
-
 /* Footer */
 footer {
-  background: var(--light-bg);
+  background: #fafaf8;
   padding: 20px 10px;
   text-align: center;
   font-size: 0.9rem;

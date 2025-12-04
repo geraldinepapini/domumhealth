@@ -6,7 +6,7 @@
   <!-- Página principal -->
   <url>
     <loc>https://www.domumhealth.com.ar/</loc>
-    <lastmod>2025-10-31</lastmod>
+    <lastmod>2025-11-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -14,7 +14,7 @@
   <!-- Tienda digital -->
   <url>
     <loc>https://www.domumhealth.com.ar/tienda.html</loc>
-    <lastmod>2025-10-31</lastmod>
+    <lastmod>2025-11-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -22,16 +22,25 @@
   <!-- Cursos -->
   <url>
     <loc>https://www.domumhealth.com.ar/cursos.html</loc>
-    <lastmod>2025-10-31</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2025-11-05</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+
+  <!-- Blog -->
+  <url>
+    <loc>https://www.domumhealth.com.ar/blog.html</loc>
+    <lastmod>2025-11-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <!-- Nosotros -->
   <url>
     <loc>https://www.domumhealth.com.ar/nosotros.html</loc>
-    <lastmod>2025-10-31</lastmod>
+    <lastmod>2025-11-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
+
 </urlset>

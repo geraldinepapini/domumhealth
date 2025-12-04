@@ -5,13 +5,13 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
+  background-color: #fafaf8; /* antes #f9f9f9 */
+  color: #6b5e52; /* texto marrón suave */
 }
 
 /* Redes sociales arriba */
 .redes-sociales {
-  background-color: #ffffff;
+  background-color: #fafaf8;
   padding: 8px 12px;
   text-align: right;
 }
@@ -31,7 +31,7 @@ header {
   justify-content: center;
   align-items: center;
   padding: 15px 0;
-  background-color: #fff;
+  background-color: #fafaf8;
 }
 header .logo {
   width: 180px;
@@ -41,7 +41,7 @@ header .logo {
 
 /* Navegación */
 nav {
-  background-color: #3d4451;
+  background-color: #9c8870; /* marrón suave */
   width: 100%;
   text-align: center;
   padding: 10px 0;
@@ -61,7 +61,7 @@ nav a {
   font-family: 'Manrope', sans-serif;
 }
 nav a:hover {
-  color: #00cfe8;
+  color: #a7b7a8; /* verde calma */
 }
 
 /* Hero sección */
@@ -73,25 +73,25 @@ nav a:hover {
 }
 .hero-img {
   width: 100%;
-  height: 350px; /* ajustá a gusto */
+  height: 350px;
   object-fit: cover;
   display: block;
 }
 
 /* Hero tienda */
 .hero-tienda {
-  background-color: #f5f5f5;
+  background-color: #f4f1ee; /* beige suave */
   padding: 4rem 2rem;
   text-align: center;
 }
 .hero-tienda h1 {
   font-size: 2.2rem;
   margin-bottom: 0.5rem;
-  color: #333;
+  color: #9c8870; /* marrón */
 }
 .hero-tienda p {
   font-size: 1.1rem;
-  color: #666;
+  color: #7a6d62;
 }
 
 /* Productos */
@@ -100,32 +100,34 @@ nav a:hover {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   padding: 3rem 2rem;
-  background-color: #fff;
+  background-color: #fafafa;
 }
 
 .producto {
-  border: 1px solid #e0e0e0;
+  border: 1px solid #e6cfc9; /* borde rosado suave */
   border-radius: 12px;
-  background-color: #fafafa;
+  background-color: #fafaf8;
   padding: 1.5rem;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-/* Hover para imágenes de productos */
+
+/* Hover para imágenes */
 .producto img {
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .producto img:hover {
-  transform: scale(1.05); /* pequeño zoom */
-  opacity: 0.9; /* leve aclarado */
+  transform: scale(1.05);
+  opacity: 0.9;
 }
-/* PRODUCTOS */
+
+/* Imagen de producto */
 .producto img {
   width: 100%;
-  height: 320px; /* todas las imágenes tendrán el mismo alto */
-  object-fit: cover; /* recorta sin deformar */
+  height: 320px;
+  object-fit: cover;
   border-radius: 8px;
   margin-bottom: 1rem;
 }
@@ -133,37 +135,41 @@ nav a:hover {
 .producto h2 {
   font-size: 1.3rem;
   margin: 0.5rem 0;
-  color: #222;
+  color: #6b5e52;
 }
+
 .producto p {
   font-size: 0.95rem;
-  color: #555;
+  color: #85786c;
   margin-bottom: 0.5rem;
 }
+
 .producto .precio {
   font-size: 1.1rem;
   font-weight: bold;
-  color: #444;
+  color: #9c8870; /* marrón */
   margin: 0.8rem 0;
 }
 
 .boton-comprar {
   display: inline-block;
-  background-color: #00cee3;
+  background-color: #a7b7a8; /* verde calma */
   color: #fff;
   text-decoration: none;
   padding: 0.6rem 1.2rem;
   border-radius: 6px;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
+
 .boton-comprar:hover {
-  background-color: #56397b;
+  background-color: #8ea395; /* verde más oscuro */
+  transform: scale(1.05);
 }
 
 /* Footer */
 footer {
-  background-color: #4f5966;
+  background-color: #9c8870; /* marrón suave */
   color: white;
   text-align: center;
   padding: 20px 10px;
@@ -176,7 +182,7 @@ footer p {
 
 footer .redes-sociales {
   margin-top: 10px;
-  text-align: center; /* íconos al medio */
+  text-align: center;
 }
 
 footer .redes-sociales a img {
