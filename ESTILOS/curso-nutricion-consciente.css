@@ -1,0 +1,294 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500&display=swap');
+/* ===== Tipografías globales ===== */
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300; /* Raleway Light */
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+}
+p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  line-height: 1.7;
+}
+button, a.btn, .btn-vermas, .boton-comprar {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+}
+/* ---------- Reset ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Colores base — ACTUALIZADOS */
+:root {
+  --primary: #9c8870;      /* marrón suave */
+  --secondary: #a7b7a8;    /* verde calma */
+  --light-bg: #f4f1ee;     /* beige */
+  --text-dark: #6b5e52;    /* marrón grisáceo suave */
+}
+
+/* Redes sociales */
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 8px 0;
+  background: #fafaf8; /* blanco cálido */
+}
+
+.redes-sociales img {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.2s ease;
+}
+.redes-sociales img:hover {
+  transform: scale(1.2);
+}
+
+/* Logo */
+header {
+  text-align: center;
+  padding: 10px 0;
+  background: #fafaf8;
+}
+.logo {
+  max-width: 180px;
+  height: auto;
+}
+
+/* Menú */
+nav {
+  background: var(--primary);
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 12px 0;
+  flex-wrap: wrap;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: color 0.3s;
+}
+nav ul li a:hover {
+  color: var(--secondary);
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  width: 100%;
+}
+.hero-img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-bottom: 4px solid var(--secondary);
+}
+
+/* ===== Frase superior estilizada ===== */
+.frase-container {
+  background-color: #fafaf8;
+  padding: 50px 20px;
+  text-align: center;
+  border-bottom: 2px solid #E6cfc9; /* rosa cálido */
+}
+
+.frase-container p {
+  max-width: 850px;
+  margin: 10px auto;
+  color: #6b5e52;
+  font-size: 1.15rem;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0.3px;
+}
+
+.frase-container p:first-child {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--primary); /* marrón suave */
+  margin-bottom: 15px;
+}
+
+.frase-container p:last-child {
+  color: #7a6d62;
+  font-style: italic;
+}
+/* ===== MINI LANDING DOMUM HEALTH ===== */
+
+.mini-landing {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  font-family: 'Raleway', sans-serif;
+  color: #4a4a4a;
+}
+
+/* HERO */
+.hero-curso {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.hero-curso h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+  color: #2f4f4f;
+  margin-bottom: 15px;
+}
+
+.hero-curso h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #6b7c7c;
+  margin-bottom: 20px;
+}
+
+.hero-frase {
+  font-style: italic;
+  color: #8a8a8a;
+  margin-bottom: 35px;
+}
+
+/* BOTÓN */
+.btn-curso {
+  background-color: #6f8f8b;
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-curso:hover {
+  background-color: #587a75;
+}
+
+.btn-curso.grande {
+  font-size: 1.05rem;
+}
+
+/* BLOQUES */
+.bloque {
+  margin-bottom: 60px;
+}
+
+.bloque h2 {
+  font-family: 'Playfair Display', serif;
+  color: #2f4f4f;
+  margin-bottom: 20px;
+}
+
+.bloque ul {
+  padding-left: 20px;
+}
+
+.bloque li {
+  margin-bottom: 10px;
+}
+
+/* BLOQUE SUAVE */
+.bloque.suave {
+  background-color: #f4f7f6;
+  padding: 35px;
+  border-radius: 12px;
+}
+
+/* AUTORA */
+.autora p {
+  max-width: 720px;
+}
+
+/* TESTIMONIOS */
+.testimonios-banner {
+  background-color: #f3ebe8;
+  padding: 50px 25px;
+  border-radius: 16px;
+  margin-bottom: 60px;
+}
+
+.testimonios-banner h2 {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  color: #7a6756;
+  margin-bottom: 30px;
+}
+
+.slide p {
+  font-style: italic;
+  text-align: center;
+  color: #5f5a55;
+}
+
+/* CTA FINAL */
+.cta-final {
+  text-align: center;
+  margin-top: 50px;
+}
+/* ===== SECCIONES DE IMAGEN ===== */
+
+.imagen-seccion {
+  width: 100%;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.imagen-seccion img {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+/* Versión más chica */
+.imagen-seccion.chica img {
+  max-width: 700px;
+}
+
+/* ===== AUTORA CON IMAGEN ===== */
+
+.autora-grid {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.autora-grid img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+@media (max-width: 768px) {
+  .autora-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .autora-grid img {
+    max-width: 240px;
+    margin: 0 auto;
+  }
+}
